@@ -6,6 +6,11 @@
   background-color: #ffffff;
   display: flex;
   gap: 24px;
+  margin-bottom: 32px;
+}
+
+.card:last-child {
+  margin-bottom: 0;
 }
 
 .cardImageWrapper {

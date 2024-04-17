@@ -30,7 +30,7 @@ const handleFulfilledGet = (state, { payload }) => {
   state.items = payload;
 };
 
-const advertsSlice = createSlice({
+const contactsSlice = createSlice({
   name: "adverts",
   initialState: {
     items: [],
@@ -47,4 +47,4 @@ const advertsSlice = createSlice({
   },
 });
 
-export default advertsSlice.reducer;
+export default contactsSlice.reducer;
