@@ -6,8 +6,8 @@ import {
   selectError,
 } from "../../store/selectors";
 import { fetchAdverts } from "../../store/thunks";
-import styles from "./AdvertsList.module.css";
 import Loader from "../Loader/Loader";
+import Card from "../Card/Card";
 
 const AdvertsList = () => {
   const dispatch = useDispatch();
@@ -30,13 +30,28 @@ const AdvertsList = () => {
   return (
     <ul>
       {adverts.map(
-        (
-          { _id, name, price } // Use adverts array here
-        ) => (
-          <li className={styles.row} key={_id}>
-            <div className={styles.item}>{name}</div>
-            <div className={styles.item}>{price}</div>
-          </li>
+        ({
+          _id,
+          gallery,
+          name,
+          price,
+          rating,
+          reviews,
+          location,
+          description,
+          details,
+        }) => (
+          <Card
+            key={_id}
+            gallery={gallery}
+            name={name}
+            price={price}
+            rating={rating}
+            reviews={reviews}
+            location={location}
+            description={description}
+            details={details}
+          />
         )
       )}
     </ul>
