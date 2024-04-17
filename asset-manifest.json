@@ -1,16 +1,36 @@
 {
   "files": {
-    "main.css": "/goit-ws-test-task/static/css/main.f855e6bc.css",
-    "main.js": "/goit-ws-test-task/static/js/main.01037f3a.js",
-    "static/js/453.41b777a8.chunk.js": "/goit-ws-test-task/static/js/453.41b777a8.chunk.js",
-    "static/media/logo.svg": "/goit-ws-test-task/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/goit-ws-test-task/static/css/main.06e8bf7c.css",
+    "main.js": "/goit-ws-test-task/static/js/main.c4ea9925.js",
+    "static/js/194.ce525f47.chunk.js": "/goit-ws-test-task/static/js/194.ce525f47.chunk.js",
+    "static/css/947.c519c17e.chunk.css": "/goit-ws-test-task/static/css/947.c519c17e.chunk.css",
+    "static/js/947.c76dc1d6.chunk.js": "/goit-ws-test-task/static/js/947.c76dc1d6.chunk.js",
+    "static/js/756.7c1c4074.chunk.js": "/goit-ws-test-task/static/js/756.7c1c4074.chunk.js",
+    "static/media/airConditioner.svg": "/goit-ws-test-task/static/media/airConditioner.cf9af972166558c6a569e25f672a196e.svg",
+    "static/media/no-image.jpg": "/goit-ws-test-task/static/media/no-image.3f37e96d8d04d1e67452.jpg",
+    "static/media/toilet.svg": "/goit-ws-test-task/static/media/toilet.60dd3da9899d2b9d07a9328d29020a82.svg",
+    "static/media/adults.svg": "/goit-ws-test-task/static/media/adults.05dd4091025b9df02791c9e10c7ed096.svg",
+    "static/media/radio.svg": "/goit-ws-test-task/static/media/radio.72d8853b3a4f361a9753d781f987d44b.svg",
+    "static/media/gas.svg": "/goit-ws-test-task/static/media/gas.92cd662fc3c3333d783c349e73d0ddf1.svg",
+    "static/media/beds.svg": "/goit-ws-test-task/static/media/beds.c8300f838a7e4353d5359e1dbd95e56f.svg",
+    "static/media/hob.svg": "/goit-ws-test-task/static/media/hob.e33599c331a78670947fc067827f3ba8.svg",
+    "static/media/microwave.svg": "/goit-ws-test-task/static/media/microwave.f7c15aa48dfb61a027514d0da3f6c169.svg",
+    "static/media/freezer.svg": "/goit-ws-test-task/static/media/freezer.cc3b504ec8e74c63e7db444cce329b81.svg",
     "index.html": "/goit-ws-test-task/index.html",
-    "main.f855e6bc.css.map": "/goit-ws-test-task/static/css/main.f855e6bc.css.map",
-    "main.01037f3a.js.map": "/goit-ws-test-task/static/js/main.01037f3a.js.map",
-    "453.41b777a8.chunk.js.map": "/goit-ws-test-task/static/js/453.41b777a8.chunk.js.map"
+    "static/media/water.svg": "/goit-ws-test-task/static/media/water.649ccc3d473c87ae5c8a3a479df39b57.svg",
+    "static/media/cd.svg": "/goit-ws-test-task/static/media/cd.db1e4c3317c6d3212090407313f51f55.svg",
+    "static/media/tv.svg": "/goit-ws-test-task/static/media/tv.f0520bf3f91bdbf212fcd30d65725d9a.svg",
+    "static/media/shower.svg": "/goit-ws-test-task/static/media/shower.35fa6f2bc37434182fa4af73e191cec7.svg",
+    "static/media/kitchen.svg": "/goit-ws-test-task/static/media/kitchen.7eeabb75af79a9dbcebbbe6fdf261b2d.svg",
+    "main.06e8bf7c.css.map": "/goit-ws-test-task/static/css/main.06e8bf7c.css.map",
+    "main.c4ea9925.js.map": "/goit-ws-test-task/static/js/main.c4ea9925.js.map",
+    "194.ce525f47.chunk.js.map": "/goit-ws-test-task/static/js/194.ce525f47.chunk.js.map",
+    "947.c519c17e.chunk.css.map": "/goit-ws-test-task/static/css/947.c519c17e.chunk.css.map",
+    "947.c76dc1d6.chunk.js.map": "/goit-ws-test-task/static/js/947.c76dc1d6.chunk.js.map",
+    "756.7c1c4074.chunk.js.map": "/goit-ws-test-task/static/js/756.7c1c4074.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.01037f3a.js"
+    "static/css/main.06e8bf7c.css",
+    "static/js/main.c4ea9925.js"
   ]
 }

@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/194.ce525f47.chunk.js","mappings":"qKAEA,MAIA,EAJiBA,KACRC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,Y","sources":["pages/HomePage/HomePgae.jsx"],"sourcesContent":["import React from \"react\";\r\n\r\nconst HomePgae = () => {\r\n  return <div>HomePgae</div>;\r\n};\r\n\r\nexport default HomePgae;\r\n"],"names":["HomePgae","_jsx","children"],"sourceRoot":""}
