@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/goit-ws-test-task/static/css/main.06e8bf7c.css",
-    "main.js": "/goit-ws-test-task/static/js/main.c4ea9925.js",
+    "main.js": "/goit-ws-test-task/static/js/main.f89aa2ed.js",
     "static/js/194.ce525f47.chunk.js": "/goit-ws-test-task/static/js/194.ce525f47.chunk.js",
-    "static/css/947.c519c17e.chunk.css": "/goit-ws-test-task/static/css/947.c519c17e.chunk.css",
-    "static/js/947.c76dc1d6.chunk.js": "/goit-ws-test-task/static/js/947.c76dc1d6.chunk.js",
+    "static/css/0.87d29d62.chunk.css": "/goit-ws-test-task/static/css/0.87d29d62.chunk.css",
+    "static/js/0.fe96075b.chunk.js": "/goit-ws-test-task/static/js/0.fe96075b.chunk.js",
     "static/js/756.7c1c4074.chunk.js": "/goit-ws-test-task/static/js/756.7c1c4074.chunk.js",
     "static/media/airConditioner.svg": "/goit-ws-test-task/static/media/airConditioner.cf9af972166558c6a569e25f672a196e.svg",
     "static/media/no-image.jpg": "/goit-ws-test-task/static/media/no-image.3f37e96d8d04d1e67452.jpg",
@@ -18,19 +18,22 @@
     "static/media/freezer.svg": "/goit-ws-test-task/static/media/freezer.cc3b504ec8e74c63e7db444cce329b81.svg",
     "index.html": "/goit-ws-test-task/index.html",
     "static/media/water.svg": "/goit-ws-test-task/static/media/water.649ccc3d473c87ae5c8a3a479df39b57.svg",
+    "static/media/rating.svg": "/goit-ws-test-task/static/media/rating.c2ae40ef3216365e53fa34928bb928f3.svg",
+    "static/media/map-pin.svg": "/goit-ws-test-task/static/media/map-pin.16b230efebd824a26e5558d49e3d3bfc.svg",
     "static/media/cd.svg": "/goit-ws-test-task/static/media/cd.db1e4c3317c6d3212090407313f51f55.svg",
     "static/media/tv.svg": "/goit-ws-test-task/static/media/tv.f0520bf3f91bdbf212fcd30d65725d9a.svg",
     "static/media/shower.svg": "/goit-ws-test-task/static/media/shower.35fa6f2bc37434182fa4af73e191cec7.svg",
     "static/media/kitchen.svg": "/goit-ws-test-task/static/media/kitchen.7eeabb75af79a9dbcebbbe6fdf261b2d.svg",
+    "static/media/close-button.svg": "/goit-ws-test-task/static/media/close-button.25dc3f46a342a188874fa545ced03ca2.svg",
     "main.06e8bf7c.css.map": "/goit-ws-test-task/static/css/main.06e8bf7c.css.map",
-    "main.c4ea9925.js.map": "/goit-ws-test-task/static/js/main.c4ea9925.js.map",
+    "main.f89aa2ed.js.map": "/goit-ws-test-task/static/js/main.f89aa2ed.js.map",
     "194.ce525f47.chunk.js.map": "/goit-ws-test-task/static/js/194.ce525f47.chunk.js.map",
-    "947.c519c17e.chunk.css.map": "/goit-ws-test-task/static/css/947.c519c17e.chunk.css.map",
-    "947.c76dc1d6.chunk.js.map": "/goit-ws-test-task/static/js/947.c76dc1d6.chunk.js.map",
+    "0.87d29d62.chunk.css.map": "/goit-ws-test-task/static/css/0.87d29d62.chunk.css.map",
+    "0.fe96075b.chunk.js.map": "/goit-ws-test-task/static/js/0.fe96075b.chunk.js.map",
     "756.7c1c4074.chunk.js.map": "/goit-ws-test-task/static/js/756.7c1c4074.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06e8bf7c.css",
-    "static/js/main.c4ea9925.js"
+    "static/js/main.f89aa2ed.js"
   ]
 }
