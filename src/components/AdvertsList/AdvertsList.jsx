@@ -10,6 +10,7 @@ import Loader from "../Loader/Loader";
 import Card from "../Card/Card";
 import ButtonLoadMore from "../ButtonLoadMore/ButtonLoadMore";
 import styles from "./AdvertsList.module.css";
+import Modal from "../Modal/Modal";
 
 const AdvertsList = () => {
   const dispatch = useDispatch();
@@ -19,6 +20,7 @@ const AdvertsList = () => {
 
   const [visibleAdverts, setVisibleAdverts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [selectedAdvert, setSelectedAdvert] = useState(null);
   const itemsPerPage = 4;
 
   useEffect(() => {
@@ -35,6 +37,14 @@ const AdvertsList = () => {
     setCurrentPage((prevPage) => prevPage + 1);
   };
 
+  const openModal = (advert) => {
+    setSelectedAdvert(advert);
+  };
+
+  const closeModal = () => {
+    setSelectedAdvert(null);
+  };
+
   if (isLoading && !error) {
     return <Loader />;
   }
@@ -46,37 +56,20 @@ const AdvertsList = () => {
   return (
     <div>
       <ul>
-        {visibleAdverts.map(
-          ({
-            _id,
-            gallery,
-            name,
-            price,
-            rating,
-            reviews,
-            location,
-            description,
-            details,
-          }) => (
-            <Card
-              key={_id}
-              gallery={gallery}
-              name={name}
-              price={price}
-              rating={rating}
-              reviews={reviews}
-              location={location}
-              description={description}
-              details={details}
-            />
-          )
-        )}
+        {visibleAdverts.map((advert) => (
+          <Card key={advert._id} advert={advert} onShowMore={openModal} />
+        ))}
       </ul>
       <div className={styles.advertsListButton}>
         {visibleAdverts.length < allAdverts.length && (
           <ButtonLoadMore onClick={loadMore} text="Load more" />
         )}
       </div>
+      <Modal
+        isOpen={!!selectedAdvert}
+        onClose={closeModal}
+        advert={selectedAdvert}
+      />
     </div>
   );
 };

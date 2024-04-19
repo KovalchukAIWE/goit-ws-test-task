@@ -1,0 +1,121 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 982px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.modalTop {
+  margin-bottom: 24px;
+}
+
+.modalMiddle {
+  height: 406px;
+  overflow-y: scroll;
+  margin-bottom: 44px;
+}
+
+.modalName,
+.modalPrice {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.modalName {
+  margin-bottom: 8px;
+}
+
+.modalRating,
+.modalRatingWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.modalRatingWrapper {
+  margin-bottom: 16px;
+}
+
+.modalRating {
+  margin-right: 16px;
+}
+
+.modalReviews {
+  border-bottom: 1px solid #101828;
+  margin-left: 4px;
+}
+
+.modalLocationWrapper {
+  display: flex;
+}
+
+.modalLocation {
+  margin-left: 4px;
+}
+
+.modalButtonClose {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.modalButtonClose:hover {
+  transform: scale(1.1);
+}
+
+.modalGallery {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.modalImages {
+  width: 290px;
+  height: 310px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modalImage {
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+}
+
+.modalBottomButtons {
+  display: flex;
+  position: relative;
+}
+
+.modalBottomButton {
+  margin-right: 40px;
+}
+
+.modalBottomButtons::before {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #10182833;
+}
