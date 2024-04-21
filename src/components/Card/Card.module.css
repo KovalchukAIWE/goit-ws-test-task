@@ -14,7 +14,7 @@
 }
 
 .cardImageWrapper {
-  max-width: 290px;
+  width: 290px;
   height: 310px;
   border-radius: 10px;
   overflow: hidden;
@@ -47,6 +47,15 @@
 .cardRatingWrapper {
   display: flex;
   align-items: center;
+}
+
+.cardPriceWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.cardPrice {
+  margin-right: 10px;
 }
 
 .cardRatingWrapper {

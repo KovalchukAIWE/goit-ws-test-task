@@ -14,8 +14,13 @@
   line-height: 24px;
   min-width: 85px;
   border-bottom: 5px solid transparent;
+  outline: none;
 }
 
 .button:hover {
+  border-bottom: 5px solid #e44848;
+}
+
+.buttonActive {
   border-bottom: 5px solid #e44848;
 }

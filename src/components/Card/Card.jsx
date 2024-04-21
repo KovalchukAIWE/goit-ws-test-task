@@ -4,6 +4,7 @@ import styles from "./Card.module.css";
 import Button from "../Button/Button";
 import Category from "../Category/Category";
 
+import likeIcon from "../../images/like.svg";
 import ratingIcon from "../../images/rating.svg";
 import locationIcon from "../../images/map-pin.svg";
 
@@ -30,7 +31,10 @@ const Card = ({ advert, onShowMore }) => {
       <div className={styles.cardTop}>
         <div className={styles.cardTitle}>
           <p className={styles.cardName}>{name}</p>
-          <p className={styles.cardPrice}>€{price}</p>
+          <div className={styles.cardPriceWrapper}>
+            <p className={styles.cardPrice}>€{price}</p>
+            <img src={likeIcon} alt="like" />
+          </div>
         </div>
         <div className={styles.cardRatingWrapper}>
           <div className={styles.cardRating}>

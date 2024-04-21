@@ -1,8 +1,11 @@
 import styles from "./ButtonModal.module.css";
 
-const ButtonModal = ({ onClick, text }) => {
+const ButtonModal = ({ onClick, text, active }) => {
   return (
-    <button onClick={onClick} className={styles.button}>
+    <button
+      onClick={onClick}
+      className={`${styles.button} ${active ? styles.buttonActive : ""}`}
+    >
       {text}
     </button>
   );

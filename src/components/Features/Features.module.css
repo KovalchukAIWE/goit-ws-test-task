@@ -1,0 +1,19 @@
+.features {
+  display: flex;
+  gap: 24px;
+}
+
+.featuresLeft {
+  width: 50%;
+}
+
+.featuresCategories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 44px;
+}
+
+.featuresRight {
+  width: 50%;
+}

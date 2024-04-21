@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Modal.module.css";
 
 import closeButton from "../../images/close-button.svg";
@@ -6,8 +6,13 @@ import ratingIcon from "../../images/rating.svg";
 import locationIcon from "../../images/map-pin.svg";
 import noImage from "../../images/no-image.jpg";
 import ButtonModal from "../ButtonModal/ButtonModal";
+import Features from "../Features/Features";
+import Reviews from "../Reviews/Reviews";
 
 const Modal = ({ isOpen, onClose, advert }) => {
+  const [showFeatures, setShowFeatures] = useState(false);
+  const [showReviews, setShowReviews] = useState(false);
+
   useEffect(() => {
     const handleKeyPress = (event) => {
       if (event.key === "Escape") {
@@ -66,10 +71,26 @@ const Modal = ({ isOpen, onClose, advert }) => {
         <div className={styles.modalBottom}>
           <div className={styles.modalBottomButtons}>
             <div className={styles.modalBottomButton}>
-              <ButtonModal text="Features" />
+              <ButtonModal
+                text="Features"
+                onClick={() => {
+                  setShowFeatures(!showFeatures);
+                  setShowReviews(false);
+                }}
+                active={showFeatures}
+              />
             </div>
-            <ButtonModal text="Reviews" />
+            <ButtonModal
+              text="Reviews"
+              onClick={() => {
+                setShowReviews(!showReviews);
+                setShowFeatures(false);
+              }}
+              active={showReviews}
+            />
           </div>
+          {showFeatures && <Features advert={advert} />}
+          {showReviews && <Reviews reviews={reviews} />}
         </div>
       </div>
     </div>
