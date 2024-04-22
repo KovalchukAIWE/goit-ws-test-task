@@ -16,3 +16,10 @@ export const selectError = createSelector(
   [selectAdvertsState],
   (advertsState) => advertsState.error
 );
+
+export const selectFavoriteAdvertsState = (state) => state.favoriteAdverts;
+
+export const selectFavoriteAdverts = createSelector(
+  [selectFavoriteAdvertsState],
+  (favoriteAdvertsState) => favoriteAdvertsState
+);

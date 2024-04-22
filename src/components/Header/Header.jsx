@@ -1,21 +1,27 @@
 import React, { Suspense } from "react";
 import { NavLink, Outlet } from "react-router-dom";
-import styles from "./Header.module.css";
 import Loader from "../Loader/Loader";
+import logo from "../../images/logo.svg";
+import styles from "./Header.module.css";
 
 const Header = () => {
   return (
-    <div className={styles.content}>
+    <div className={styles.container}>
       <div className={styles.header}>
-        <NavLink className={styles.headerLink} to="/">
-          Home
-        </NavLink>
-        <NavLink className={styles.headerLink} to="/catalog">
-          Catalog
-        </NavLink>
-        <NavLink className={styles.headerLink} to="/favorites">
-          Favorites
-        </NavLink>
+        <div>
+          <img src={logo} alt="logo" />
+        </div>
+        <div>
+          <NavLink className={styles.headerLink} to="/">
+            Home
+          </NavLink>
+          <NavLink className={styles.headerLink} to="/catalog">
+            Catalog
+          </NavLink>
+          <NavLink className={styles.headerLink} to="/favorites">
+            Favorites
+          </NavLink>
+        </div>
       </div>
       <Suspense fallback={<Loader />}>
         <Outlet />

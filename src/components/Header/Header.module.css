@@ -1,15 +1,28 @@
-.content {
-  padding: 20px 50px;
+.container {
+  width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .header {
   padding: 20px 50px;
-  background-color: white;
+  background-color: #f7f7f7;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 20px;
 }
 
 .headerLink {
   font-size: 22px;
   font-weight: bold;
   margin-right: 30px;
+  text-decoration: none;
+  background-color: transparent;
 }

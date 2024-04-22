@@ -1,8 +1,9 @@
 import React, { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import Header from "./Header/Header";
+// import styles from "./App.module.css";
 
-const HomePage = lazy(() => import("../pages/HomePage/HomePgae"));
+const HomePage = lazy(() => import("../pages/HomePage/HomePage"));
 const CatalogPage = lazy(() => import("../pages/CataloguePage/CatalogPage"));
 const FavouriteAdvertsPage = lazy(() =>
   import("../pages/FavouriteAdvertsPage/FavouriteAdvertsPage")
