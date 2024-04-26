@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgoit_ws_test_task=self.webpackChunkgoit_ws_test_task||[]).push([[756],{756:(s,t,e)=>{e.r(t),e.d(t,{default:()=>i});e(43);var a=e(579);const i=()=>(0,a.jsx)("div",{children:"FavouriteAdvertsPage"})}}]);
-//# sourceMappingURL=756.7c1c4074.chunk.js.map
