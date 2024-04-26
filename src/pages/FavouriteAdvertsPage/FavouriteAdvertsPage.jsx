@@ -1,17 +1,18 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { selectFavoriteAdverts } from "../../store/selectors";
-import Card from "../../components/Card/Card";
+import Favorite from "../../components/Favorite/Favorite";
+import styles from "./FavouriteAdvertsPage.module.css";
 
 const FavouriteAdvertsPage = () => {
   const favoriteAdverts = useSelector(selectFavoriteAdverts);
 
   return (
-    <div>
-      <h1>Favorite Adverts</h1>
+    <div className={styles.container}>
+      <h1 className={styles.favoriteAdvertsPage__title}>Favorite Adverts</h1>
       <div>
         {favoriteAdverts.map((advert) => (
-          <Card key={advert._id} advert={advert} />
+          <Favorite key={advert._id} advert={advert} />
         ))}
       </div>
     </div>

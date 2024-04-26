@@ -1,0 +1,29 @@
+.vehicleType {
+  display: flex;
+  gap: 10px;
+}
+
+.vehicleType__button {
+  border: 1px solid #10182833;
+  border-radius: 10px;
+  outline: none;
+  background-color: #ffffff;
+  width: 112px;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.vehicleType__button:hover {
+  border: 1px solid #e44848;
+}
+
+.vehicleType__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}

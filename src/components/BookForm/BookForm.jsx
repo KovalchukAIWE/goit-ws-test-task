@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./BookForm.module.css";
-import FormInput from "../FormInput/FormInput";
+import FormInput from "../FormInput/FilterInput";
 import Button from "../Button/Button";
 
 const BookForm = () => {

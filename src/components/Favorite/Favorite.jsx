@@ -1,7 +1,5 @@
 import React from "react";
 import noImage from "../../images/no-image.jpg";
-import styles from "./Card.module.css";
-import Button from "../Button/Button";
 import Category from "../Category/Category";
 import { useDispatch, useSelector } from "react-redux";
 import { selectFavoriteAdverts } from "../../store/selectors";
@@ -9,16 +7,19 @@ import {
   addFavoriteAdvert,
   removeFavoriteAdvert,
 } from "../../store/favoriteAdvertsSlice";
+import styles from "./Favorite.module.css";
 
 import likeIcon from "../../images/like.svg";
 import likedIcon from "../../images/like-filled.svg";
 import ratingIcon from "../../images/rating.svg";
 import locationIcon from "../../images/map-pin.svg";
 
-const Card = ({ advert, onShowMore }) => {
+const Favorite = ({ advert }) => {
   const dispatch = useDispatch();
   const favoriteAdverts = useSelector(selectFavoriteAdverts);
-  const isFavorite = favoriteAdverts.some((fav) => fav._id === advert._id);
+  const isFavorite = favoriteAdverts.some(
+    (favorite) => favorite._id === advert._id
+  );
 
   const handleFavoriteToggle = () => {
     if (isFavorite) {
@@ -76,10 +77,9 @@ const Card = ({ advert, onShowMore }) => {
         <div className={styles.cardCategories}>
           <Category details={details} />
         </div>
-        <Button onClick={() => onShowMore(advert)} text="Show more" />
       </div>
     </li>
   );
 };
 
-export default Card;
+export default Favorite;

@@ -1,26 +1,41 @@
-import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers } from "redux";
-import { persistReducer, persistStore } from "redux-persist";
-import storage from "redux-persist/lib/storage";
+import { configureStore } from "@reduxjs/toolkit";
 import advertsReducer from "./advertsSlice";
 import favoriteAdvertsReducer from "./favoriteAdvertsSlice";
+
+const loadState = () => {
+  try {
+    const serializedState = localStorage.getItem("reduxState");
+    if (serializedState === null) {
+      return undefined;
+    }
+    return JSON.parse(serializedState);
+  } catch (err) {
+    return undefined;
+  }
+};
+
+const saveState = (state) => {
+  try {
+    const serializedState = JSON.stringify(state);
+    localStorage.setItem("reduxState", serializedState);
+  } catch {
+    console.log("error");
+  }
+};
 
 const rootReducer = combineReducers({
   adverts: advertsReducer,
   favoriteAdverts: favoriteAdvertsReducer,
 });
 
-const persistConfig = {
-  key: "root",
-  storage,
-};
-
-const persistedReducer = persistReducer(persistConfig, rootReducer);
+const persistedState = loadState();
 
 export const store = configureStore({
-  reducer: persistedReducer,
+  reducer: rootReducer,
+  preloadedState: persistedState,
 });
 
-export const persistor = persistStore(store);
-
-export default store;
+store.subscribe(() => {
+  saveState(store.getState());
+});

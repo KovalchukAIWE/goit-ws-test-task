@@ -1,24 +1,30 @@
 import React, { Suspense } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import Loader from "../Loader/Loader";
-import logo from "../../images/logo.svg";
+import logo from "../../images/logo.png";
 import styles from "./Header.module.css";
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate("/");
+  };
+
   return (
-    <div className={styles.container}>
+    <div className={styles.wrapper}>
       <div className={styles.header}>
-        <div>
-          <img src={logo} alt="logo" />
-        </div>
-        <div>
-          <NavLink className={styles.headerLink} to="/">
+        <button className={styles.header__logoBtn} onClick={handleButtonClick}>
+          <img className={styles.header__logo} src={logo} alt="logo" />
+        </button>
+        <div className={styles.header__links}>
+          <NavLink className={styles.header__link} to="/">
             Home
           </NavLink>
-          <NavLink className={styles.headerLink} to="/catalog">
+          <NavLink className={styles.header__link} to="/catalog">
             Catalog
           </NavLink>
-          <NavLink className={styles.headerLink} to="/favorites">
+          <NavLink className={styles.header__link} to="/favorites">
             Favorites
           </NavLink>
         </div>

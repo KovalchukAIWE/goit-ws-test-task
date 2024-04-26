@@ -1,0 +1,31 @@
+.filterEquipment {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  column-gap: 10px;
+}
+
+.filterEquipment__button {
+  border: 1px solid #10182833;
+  border-radius: 10px;
+  outline: none;
+  background-color: #ffffff;
+  width: 112px;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.filterEquipment__button:hover {
+  border: 1px solid #e44848;
+}
+
+.filterEquipment__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}

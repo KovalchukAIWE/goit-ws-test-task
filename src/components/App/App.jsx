@@ -1,12 +1,11 @@
 import React, { lazy } from "react";
-import { Route, Routes } from "react-router-dom";
-import Header from "./Header/Header";
-// import styles from "./App.module.css";
+import { Navigate, Route, Routes } from "react-router-dom";
+import Header from "../Header/Header";
 
-const HomePage = lazy(() => import("../pages/HomePage/HomePage"));
-const CatalogPage = lazy(() => import("../pages/CataloguePage/CatalogPage"));
+const HomePage = lazy(() => import("../../pages/HomePage/HomePage"));
+const CatalogPage = lazy(() => import("../../pages/CataloguePage/CatalogPage"));
 const FavouriteAdvertsPage = lazy(() =>
-  import("../pages/FavouriteAdvertsPage/FavouriteAdvertsPage")
+  import("../../pages/FavouriteAdvertsPage/FavouriteAdvertsPage")
 );
 
 const App = () => {
@@ -16,6 +15,7 @@ const App = () => {
         <Route index element={<HomePage />} />
         <Route path="/catalog" element={<CatalogPage />} />
         <Route path="/favorites" element={<FavouriteAdvertsPage />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Route>
     </Routes>
   );

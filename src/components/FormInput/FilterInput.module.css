@@ -1,0 +1,16 @@
+.filterInput {
+  width: 100%;
+  padding: 18px 46px;
+  border-radius: 10px;
+  background: #f7f7f7;
+  border: none;
+  outline: none;
+  margin-bottom: 14px;
+}
+
+.filterInput::before {
+  position: absolute;
+  content: url("../../images/map-pin.svg");
+  left: -28px;
+  top: 5px;
+}
